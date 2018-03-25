@@ -9,57 +9,76 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-<div class="container">
-    <!--<div class="row no-gutters">-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 sticky-top">
-            <a class="navbar-brand" href="#"> <img src="img/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">О компании</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Блог</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
-                    </li>
-                </ul>
+<div class="jumbotron header sticky-top" style="background: #fff; padding: 0">
+    <div class="container">
+        <header class="row no-gutters ">
+            <div class="col-4 col-md-3 col-lg-2"><a class="logoLink" href="#"><img class="logoImage" src="img/logo.png"
+                                                                                   alt=""></a></div>
+            <div class="col-8 col-md-5 offset-md-4 offset-lg-0 col-lg-5">
+                <nav class="headerMenu">
+                    <button class="burger">
+
+                    </button>
+                    <ul>
+                        <li><a class="menuLink" href="#">Услуги</a></li>
+                        <li><a class="menuLink" href="#">О компании</a></li>
+                        <li><a class="menuLink" href="#">Блог</a></li>
+                        <li><a class="menuLink" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="col-lg-5 contactUs">
-                <div class="row no-gutters">
-                    <div class="col-12 col-md-8 col-lg-6">
-                        <span class="navbar-text">
-                            <a href="tel:+375 29 339-22-22">+375 29 339-22-22</a><br/>
-                            <a href="tel:+375 17 380-13-22">+375 17 380-13-22</a>
-                        </span>
-                    </div>
-                    <div class="col-12 col-sm-6  col-md-4 col-lg-6">
-                        <button class="btn" type="button">ЗАДАТЬ ВОПРОС</button>
-                    </div>
+            <div class="col-8 offset-2 offset-sm-0 col-sm-6 col-md-4 col-lg-2 phones">
+                <a class="phone" href="tel:+375 29 339-22-22">+375 29 339-22-22</a>
+                <a class="phone" href="tel:+375 17 380-13-22">+375 17 380-13-22</a>
+            </div>
+            <div class="col-8 offset-2 offset-sm-0 col-sm-6 col-md-4 offset-md-4 offset-lg-0 col-lg-3">
+                <button class="askQuestion">
+                    ЗАДАТЬ ВОПРОС
+                </button>
+            </div>
+        </header>
+    </div>
+</div>
+<div class="jumbotron banner" style="background: #434343"> <!--background: url('#')-->
+    <div class="row">
+        <div class="col-3 offset-6">
+            <div class="row no-gutters">
+                <div class="col-12"><span class="care bold">ЗАБОТА</span></div>
+                <div class="col-12"><span class="care light">О ВАШЕМ</span></div>
+                <div class="col-12"><span class="care bold">САЙТЕ</span></div>
+                <div class="col-12">
+                    <button class="btnMore">
+                        Подробнее
+                    </button>
                 </div>
             </div>
-        </nav>
-    <!--</div>-->
+        </div>
+    </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="title">Услуги</h1>
+        </div>
+        <div class="col-2">
+            <img src="img/svg/контент.svg" style="width: 100px" alt="">
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+    </div>
+</div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
