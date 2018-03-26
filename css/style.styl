@@ -54,7 +54,6 @@ table
 
 body
   font-family "Montserrat", sans-serif
-  height 3000px
 
 .jumbotron.header
   background white
@@ -101,7 +100,7 @@ header
   color #303030
   text-decoration none
 
-.askQuestion
+.askQuestionButton
   width 100%
   height 50px
   background #ef323b
@@ -112,7 +111,7 @@ header
   font-weight 600
   cursor pointer
   font-size 16px
-  &:after
+  &.arrow:after
     content url("../img/arrow.png")
     display inline-block
     margin-left 5px
@@ -139,13 +138,108 @@ header
     cursor pointer
     &:hover
       opacity 1
+.title
+  font-weight 600
+  font-size 42px
+  color #303030
+  margin 40px 0
+.services
+  text-align center
+  .servicesItem
+    padding 10px
+    height 100%
+    &:hover
+      color white
+      background-color #ef323b
+      cursor pointer
+      a,.servicesText
+        color white
+    a
+      text-decoration none
+      font-size 120px
+      color #ef323b
+    .servicesText
+      font-size 18px
+      font-weight 400
+      color #4f4f4f
+  .servicesMore
+    height 100%
+    cursor pointer
+    overflow hidden
+    padding 40px 10px
+    &:hover
+      background #ef323b
+      a
+        color white
+        &:after
+          background-position 100% 0
+    a
+      color #4f4f4f
+      text-decoration none
+      &:after 
+        content ""
+        display inline-block
+        vertical-align middle
+        background url("../img/arrowMore.png") 0 0 no-repeat
+        width 33px
+        height 122px
+.clients
+  text-align center
+  margin-top 30px
+  align-items center
+  .clientItem
+      width 80%
+      margin-bottom 30px
+.about
+  .leftBlockAbout
+    padding-top 60px
+  img
+    width 100%
+  .info
+    position relative
+    top -60px
+  .titleAbout
+    color #ef323b
+    font-size 32px
+    font-weight 600
+    line-height 38px
+    margin-bottom 15px
+    display block
+  .description
+    font-size 14px
+    line-height 24px
+    color #3f3f3f
+    font-weight 400
+    padding-left 30px
+    border-left  3px solid #ef323b
+    display block
+  .whatWeDo
+    color #3f3f3f
+    fpnt-size 14px
+    line-height 24px
+    font-weight 400
+  .whatWeDoMore
+    color #3f3f3f
+    font-size 14px
+    line-height 24px
+    font-weight 600
+    margin 15px 0 35px 0
+    display block
+
+.askQuestionBottom
+  text-align center
+  align-items center
+  display flex
+  button
+    max-width 250px
+  .startWork
+    font-size 24px
+    line-height 36px
+    .bold
+      font-weight 700
 
 
-#rampage
-  font-family: 'icomoon' !important;
-  content "\e901"
-
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 1199px)
   .phone
     font-size 16px
     line-height 30px
@@ -155,7 +249,7 @@ header
       li
         margin 0 4px
 
-@media screen and (max-width: 992px)
+@media screen and (max-width: 991px)
   .headerMenu
     justify-content flex-end
     flex-direction column
@@ -170,8 +264,25 @@ header
       li
         display block
         padding 5px 0
+  .about
+    .titleBlock
+      order -2
+    .rightBlockAbout
+      order -1
 
-@media screen and (max-width: 576px)
+@media screen and (max-width: 575px)
   .phones
     text-align center
     order 1
+  .banner
+    .care
+      font-size 43px
+  .about
+    .leftBlockAbout
+      padding-top 20px
+    .titleAbout
+      font-size 21px
+      line-height 27px
+    .description
+      font-size 13px
+      line-height 20px

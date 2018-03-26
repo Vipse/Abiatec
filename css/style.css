@@ -132,7 +132,6 @@ table {
 }
 body {
   font-family: "Montserrat", sans-serif;
-  height: 3000px;
 }
 .jumbotron.header {
   background: #fff;
@@ -183,7 +182,7 @@ header .logoImage {
   color: #303030;
   text-decoration: none;
 }
-.askQuestion {
+.askQuestionButton {
   width: 100%;
   height: 50px;
   background: #ef323b;
@@ -195,7 +194,7 @@ header .logoImage {
   cursor: pointer;
   font-size: 16px;
 }
-.askQuestion:after {
+.askQuestionButton.arrow:after {
   content: url("../img/arrow.png");
   display: inline-block;
   margin-left: 5px;
@@ -228,11 +227,131 @@ header .logoImage {
 .banner .btnMore:hover {
   opacity: 1;
 }
-#rampage {
-  font-family: 'icomoon' !important;
-  content: "\e901";
+.title {
+  font-weight: 600;
+  font-size: 42px;
+  color: #303030;
+  margin: 40px 0;
 }
-@media screen and (max-width: 1200px) {
+.services {
+  text-align: center;
+}
+.services .servicesItem {
+  padding: 10px;
+  height: 100%;
+}
+.services .servicesItem:hover {
+  color: #fff;
+  background-color: #ef323b;
+  cursor: pointer;
+}
+.services .servicesItem:hover a,
+.services .servicesItem:hover .servicesText {
+  color: #fff;
+}
+.services .servicesItem a {
+  text-decoration: none;
+  font-size: 120px;
+  color: #ef323b;
+}
+.services .servicesItem .servicesText {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+.services .servicesMore {
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 40px 10px;
+}
+.services .servicesMore:hover {
+  background: #ef323b;
+}
+.services .servicesMore:hover a {
+  color: #fff;
+}
+.services .servicesMore:hover a:after {
+  background-position: 100% 0;
+}
+.services .servicesMore a {
+  color: #4f4f4f;
+  text-decoration: none;
+}
+.services .servicesMore a:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../img/arrowMore.png") 0 0 no-repeat;
+  width: 33px;
+  height: 122px;
+}
+.clients {
+  text-align: center;
+  margin-top: 30px;
+  align-items: center;
+}
+.clients .clientItem {
+  width: 80%;
+  margin-bottom: 30px;
+}
+.about .leftBlockAbout {
+  padding-top: 60px;
+}
+.about img {
+  width: 100%;
+}
+.about .info {
+  position: relative;
+  top: -60px;
+}
+.about .titleAbout {
+  color: #ef323b;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  margin-bottom: 15px;
+  display: block;
+}
+.about .description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #3f3f3f;
+  font-weight: 400;
+  padding-left: 30px;
+  border-left: 3px solid #ef323b;
+  display: block;
+}
+.about .whatWeDo {
+  color: #3f3f3f;
+  fpnt-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.about .whatWeDoMore {
+  color: #3f3f3f;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 15px 0 35px 0;
+  display: block;
+}
+.askQuestionBottom {
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.askQuestionBottom button {
+  max-width: 250px;
+}
+.askQuestionBottom .startWork {
+  font-size: 24px;
+  line-height: 36px;
+}
+.askQuestionBottom .startWork .bold {
+  font-weight: 700;
+}
+@media screen and (max-width: 1199px) {
   .phone {
     font-size: 16px;
     line-height: 30px;
@@ -241,7 +360,7 @@ header .logoImage {
     margin: 0 4px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .headerMenu {
     justify-content: flex-end;
     flex-direction: column;
@@ -260,10 +379,30 @@ header .logoImage {
     display: block;
     padding: 5px 0;
   }
+  .about .titleBlock {
+    order: -2;
+  }
+  .about .rightBlockAbout {
+    order: -1;
+  }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .phones {
     text-align: center;
     order: 1;
+  }
+  .banner .care {
+    font-size: 43px;
+  }
+  .about .leftBlockAbout {
+    padding-top: 20px;
+  }
+  .about .titleAbout {
+    font-size: 21px;
+    line-height: 27px;
+  }
+  .about .description {
+    font-size: 13px;
+    line-height: 20px;
   }
 }
