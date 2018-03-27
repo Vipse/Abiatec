@@ -1,3 +1,3 @@
 $(".burger").on("click", function () {
-    $(".headerMenu ul").slideToggle("slow");
+    $(".headerMenu ul").slideToggle("200");
 });
