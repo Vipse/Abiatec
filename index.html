@@ -10,15 +10,61 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-<div class="jumbotron header sticky-top" style="background: #fff; padding: 0">
-    <div class="container">
-        <header class="row no-gutters ">
-            <div class="col-4 col-md-3 col-lg-2 logo"><a class="logoLink" href="#"><img class="logoImage" src="img/logo.png" alt=""></a></div>
-            <div class="col-6 col-sm-7 col-md-6 offset-md-2 offset-lg-0 col-lg-5 navigation">
-                <nav class="headerMenu">
-                    <button class="burger">
+<div class="mobileMenuWrapper" style="display: none">
+    <div class="slideMenuMobile" style="display: none">
+        <button class="closeMenu"></button>
+        <ul>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Блог</a></li>
+            <li><a href="">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container-fluid header sticky-top">
+    <div class="container-fluid formConsult" style="display:none;" >
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-12 text-right">
+                    <button class="closeForm"></button>
+                </div>
+                <div class="col-md-6 col-lg-4 d-none d-md-flex">
+                    <div class="row no-gutters getConsultText">
+                        <div class="col-12"><span>ВОЗНИКЛИ ВОПРОСЫ?</span></div>
+                        <div class="col-12"><span>ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ</span></div>
+                        <div class="col-12"><span>УЖЕ СЕЙЧАС!</span></div>
+                    </div>
+                </div>
+                <div class="col-12 d-block d-md-none text-center">
+                    <span class="fillTheFormText">ЗАПОЛНИТЕ ФОРМУ</span>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <form action="">
+                        <input type="text" placeholder="Ваше имя и фамилия">
+                        <input type="text" placeholder="Ваш контактный телефон">
+                        <input type="text" placeholder="Ваш e-mail">
+                        <textarea name="" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
+                        <input type="submit" value="ОТПРАВИТЬ">
+                    </form>
+                </div>
+                <div class="d-none d-lg-flex col-lg-4 manager text-right">
+                    <div class="row no-gutters workerInfo w-100">
+                        <div class="col-12"><span class="workerName">Анна Иванова</span></div>
+                        <div class="col-12"><span class="workerSpeciality">менеджер проектов</span></div>
+                    </div>
 
-                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <header class="row no-gutters">
+            <div class="col-2 col-sm-1 d-lg-none">
+                <button class="burger"></button>
+            </div>
+            <div class="col-6 col-sm-5 col-md-3 col-lg-2 logo"><a class="logoLink" href="#"><img class="logoImage" src="img/logo.png" alt=""></a></div>
+            <div class="col-lg-5 d-none d-lg-block">
+                <nav class="headerMenu">
                     <ul>
                         <li><a class="menuLink" href="#">Услуги</a></li>
                         <li><a class="menuLink" href="#">О компании</a></li>
@@ -27,21 +73,39 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-6 offset-2 offset-sm-0 col-sm-8 offset-md-5  col-md-4 offset-lg-0 col-lg-2 phones">
+            <div class="d-none d-md-block offset-md-1 col-md-3 offset-lg-0 col-lg-2 phones">
                 <a class="phone" href="tel:+375 29 339-22-22">+375 29 339-22-22</a>
                 <a class="phone" href="tel:+375 17 380-13-22">+375 17 380-13-22</a>
             </div>
-            <div class="col-6 col-sm-5 col-md-4 col-lg-3">
-                <button class="askQuestionButton arrow">
-                    ЗАДАТЬ ВОПРОС
-                </button>
+            <div class="col-4 offset-sm-3 col-sm-3 offset-md-1 col-md-3 offset-lg-0 col-lg-3 text-right">
+                <div class="row no-gutters">
+                    <div class="col-12">
+                        <button class="askQuestionButton arrow">
+                            ЗАДАТЬ ВОПРОС
+                        </button>
+                    </div>
+                    <div class="col-12 d-md-none">
+                        <button class="showPhones">
+                            ЗАДАТЬ ВОПРОС
+                        </button>
+                    </div>
+                </div>
             </div>
+
         </header>
+    </div>
+    <div class="container-fluid phonesMobileVersion">
+        <div class="row no-gutters">
+            <div class="col-12 d-md-none phones text-center">
+                <a class="phone" href="tel:+375 29 339-22-22">+375 29 339-22-22</a>
+                <a class="phone" href="tel:+375 17 380-13-22">+375 17 380-13-22</a>
+            </div>
+        </div>
     </div>
 </div>
 <div class="jumbotron banner" style="background: #434343"> <!--background: url('#')-->
     <div class="row no-gutters">
-        <div class="offset-0 col-12 col-md-7 offset-md-5 col-lg-6 offset-lg-6 ">
+        <div class="col-11 offset-1 offset-sm-3 col-sm-9 col-md-7 offset-md-5 col-lg-6 offset-lg-6 ">
             <div class="row no-gutters">
                 <div class="col-12"><span class="care bold">ЗАБОТА</span></div>
                 <div class="col-12"><span class="care light">О ВАШЕМ</span></div>
@@ -60,75 +124,56 @@
         <div class="col-12">
             <h1 class="title">Услуги</h1>
         </div>
-        <div class="offset-lg-2 col-lg-2 col-md-3 col-sm-6 col-6">
-            <div class="row no-gutters servicesItem">
-                <div class="col-12"><a href="" class="icon-interface"></a></div>
-                <div class="col-12"><span class="servicesText">Улучшение дизайна</span></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-            <div class="row no-gutters servicesItem">
-                <div class="col-12"><a href="" class="icon-content"></a></div>
-                <div class="col-12"><span class="servicesText">Улучшение контента</span></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-            <div class="row no-gutters servicesItem">
-                <div class="col-12"><a href="" class="icon-rework"></a></div>
-                <div class="col-12"><span class="servicesText">Доработка систем управления</span></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-            <div class="row no-gutters servicesItem">
-                <div class="col-12"><a href="" class="icon-audit"></a></div>
-                <div class="col-12"><span class="servicesText">Аудит и тесты сайтов и магазинов</span></div>
-            </div>
-        </div>
-        <div class="offset-lg-2 col-lg-2 col-md-3 col-sm-6 col-6">
-            <div class="row no-gutters servicesItem">
-                <div class="col-12"><a href="" class="icon-payment-system"></a></div>
-                <div class="col-12"><span class="servicesText">Интеграция внешних систем</span></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-            <div class="row no-gutters servicesItem">
-                <div class="col-12"><a href="" class="icon-shop"></a></div>
-                <div class="col-12"><span class="servicesText">Интеграция с системами 1С, ERP и CRM</span></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-            <div class="row no-gutters servicesItem">
-                <div class="col-12"><a href="" class="icon-mail"></a></div>
-                <div class="col-12"><span class="servicesText">Интеграция с почтовыми сервисами</span></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-            <div class="row no-gutters servicesItem">
-                <div class="col-12"><a href="" class="icon-phone"></a></div>
-                <div class="col-12"><span class="servicesText">Внедрение IP-телефонии и Call-центров</span></div>
-            </div>
-        </div>
-        <div class="offset-lg-2 col-lg-2 col-md-3 col-sm-6 col-6">
-            <div class="row no-gutters servicesItem">
-                <div class="col-12"><a href="" class="icon-analysis"></a></div>
-                <div class="col-12"><span class="servicesText">Настройка сбора статистики</span></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-            <div class="row no-gutters servicesItem">
-                <div class="col-12"><a href="" class="icon-support"></a></div>
-                <div class="col-12"><span class="servicesText">Оптимизация и техподдержка</span></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-            <div class="row no-gutters servicesItem">
-                <div class="col-12"><a href="" class="icon-bitrix"></a></div>
-                <div class="col-12"><span class="servicesText">Продажа и внедрение Битрикс24</span></div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-            <div class="row no-gutters servicesMore">
-                <div class="col-12"><a href="">Подробнее</a></div>
+        <div class="col-12 d-flex justify-content-center">
+            <div class="servicesWrapper" style="max-width: 900px">
+                <a href="#" class="row no-gutters servicesItem">
+                    <div class="col-12"><span class="icon icon-interface"></span></div>
+                    <div class="col-12"><span class="servicesText">Улучшение дизайна</span></div>
+                </a>
+                <a href="#" class="row no-gutters servicesItem">
+                    <div class="col-12"><span class="icon icon-content"></span></div>
+                    <div class="col-12"><span class="servicesText">Улучшение контента</span></div>
+                </a>
+                <a href="#" class="row no-gutters servicesItem">
+                    <div class="col-12"><span class="icon icon-rework"></span></div>
+                    <div class="col-12"><span class="servicesText">Доработка систем управления</span></div>
+                </a>
+                <a href="#" class="row no-gutters servicesItem">
+                    <div class="col-12"><span class="icon icon-audit"></span></div>
+                    <div class="col-12"><span class="servicesText">Аудит и тесты сайтов и магазинов</span></div>
+                </a>
+                <a href="#" class="row no-gutters servicesItem">
+                    <div class="col-12"><span class="icon icon-payment-system"></span></div>
+                    <div class="col-12"><span class="servicesText">Интеграция внешних систем</span></div>
+                </a>
+                <a href="#" class="row no-gutters servicesItem">
+                    <div class="col-12"><span class="icon icon-shop"></span></div>
+                    <div class="col-12"><span class="servicesText">Интеграция с системами 1С, ERP и CRM</span></div>
+                </a>
+                <a href="#" class="row no-gutters servicesItem">
+                    <div class="col-12"><span class="icon icon-mail"></span></div>
+                    <div class="col-12"><span class="servicesText">Интеграция с почтовыми сервисами</span></div>
+                </a>
+                <a href="#" class="row no-gutters servicesItem">
+                    <div class="col-12"><span class="icon icon-phone"></span></div>
+                    <div class="col-12"><span class="servicesText">Внедрение IP-телефонии и Call-центров</span></div>
+                </a>
+                <a href="#" class="row no-gutters servicesItem">
+                    <div class="col-12"><span class="icon icon-analysis"></span></div>
+                    <div class="col-12"><span class="servicesText">Настройка сбора статистики</span></div>
+                </a>
+                <a href="#" class="row no-gutters servicesItem">
+                    <div class="col-12"><span class="icon icon-support"></span></div>
+                    <div class="col-12"><span class="servicesText">Оптимизация и техподдержка</span></div>
+                </a>
+                <a href="#" class="row no-gutters servicesItem">
+                    <div class="col-12"><span class="icon icon-bitrix"></span></div>
+                    <div class="col-12"><span class="servicesText">Продажа и внедрение Битрикс24</span></div>
+                </a>
+                <a href="#" class="row no-gutters servicesMore">
+                    <div class="col-12"><span>Подробнее</span></div>
+                </a>
+
             </div>
         </div>
     </div>
@@ -158,7 +203,7 @@
                 <div class="col-12">
                     <img src="img/operativnost.jpg" alt="">
                 </div>
-                <div class="col-8 offset-4">
+                <div class="offset-0 col-12 col-md-8 offset-md-4">
                     <div class="row info">
                         <div class="col-12"><span class="titleAbout">ОПЕРАТИВНАЯ РАБОТА</span></div>
                         <div class="col-12"><span class="description">Каждый наш клиент получает возможность не просто разработки сайта, а построения долгосрочной совместной стратегии по достижению бизнес целей.</span>
@@ -168,7 +213,7 @@
                 <div class="col-12">
                     <img src="img/stablePrice.jpg" alt="">
                 </div>
-                <div class="col-8 offset-4">
+                <div class="offset-0 col-12 col-md-8 offset-md-4">
                     <div class="row info">
                         <div class="col-12"><span class="titleAbout">СТАБИЛЬНЫЙ ПРАЙС</span></div>
                         <div class="col-12"><span class="description">Персональный менеджер, удобная CRM система взаимодействия студии и клиента, длительная гарантия на сайт – делают работу с нами не только удобной, но и легкой.</span>
@@ -179,7 +224,7 @@
         </div>
         <div class="col-12 col-lg-6 rightBlockAbout">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 d-none d-md-block">
                     <div class="row">
                         <div class="col-12">
                             <span class="whatWeDo">Сегодня мы специализируемся на создании сайтов со сложным функционалом и решаем нестандартные задачи для интернет-магазинов, занимаемся разработкой web-сервисов и других решений для e-commerce.</span>
@@ -192,7 +237,7 @@
                 <div class="col-12">
                     <img src="img/quality.jpg" alt="">
                 </div>
-                <div class="col-8 offset-4">
+                <div class="offset-0 col-12 col-md-8 offset-md-4">
                     <div class="row info">
                         <div class="col-12"><span class="titleAbout">ВЫСОКОЕ КАЧЕСТВО</span></div>
                         <div class="col-12"><span class="description">Мы делаем проекты, за которые не берутся наши конкуренты. Разработка интернет-магазинов, нестандартных решений для веб и нестандартного функционала – сильная сторона нашей компании.</span>
@@ -204,9 +249,9 @@
 
     </div>
 </div>
-<div class="jumbotron askQuestionBottom">
+<div class="container-fluid mb-0 bottomQuestion">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-12 col-md-7 col-lg-6 offset-lg-1">
                 <span class="startWork">НАЧНИТЕ РАБОТУ <span class="bold">ПРЯМО СЕЙЧАС!</span></span>
             </div>
@@ -216,7 +261,91 @@
         </div>
     </div>
 </div>
+<footer>
+    <div id="bottomForm" class="container-fluid formConsult" style="display:none;" >
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-12 text-right">
+                    <button class="closeForm"></button>
+                </div>
+                <div class="col-md-6 col-lg-4 d-none d-md-flex">
+                    <div class="row no-gutters getConsultText">
+                        <div class="col-12"><span>ВОЗНИКЛИ ВОПРОСЫ?</span></div>
+                        <div class="col-12"><span>ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ</span></div>
+                        <div class="col-12"><span>УЖЕ СЕЙЧАС!</span></div>
+                    </div>
+                </div>
+                <div class="col-12 d-block d-md-none text-center">
+                    <span class="fillTheFormText">ЗАПОЛНИТЕ ФОРМУ</span>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <form action="">
+                        <input type="text" placeholder="Ваше имя и фамилия">
+                        <input type="text" placeholder="Ваш контактный телефон">
+                        <input type="text" placeholder="Ваш e-mail">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
+                        <input type="submit" value="ОТПРАВИТЬ">
+                    </form>
+                </div>
+                <div class="d-none d-lg-flex col-lg-4 manager text-right">
+                    <div class="row no-gutters workerInfo w-100">
+                        <div class="col-12"><span class="workerName">Анна Иванова</span></div>
+                        <div class="col-12"><span class="workerSpeciality">менеджер проектов</span></div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-2 col-lg-2">
+                    <div class="row no-gutters">
+                        <div class="col-4 col-md-12">
+                            <a class="bottomMenuLink" href="#">Услуги</a>
+                        </div>
+                        <div class="col-4 col-md-12">
+                            <a class="bottomMenuLink" href="#">Блог</a>
+                        </div>
+                        <div class="col-4 col-md-12">
+                            <a class="bottomMenuLink" href="#">Отзывы</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2">
+                    <div class="row no-gutters">
+                        <div class="col-12"><span class="contactsTitle">Контакты</span></div>
+                        <div class="col-12"><span class="contacts">г. Минск<br/>пер. Чайковского 3-3<br/>(2 этаж)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 offset-lg-1">
+                    <div class="row no-gutters">
+                        <div class="col-12"><span class="supportTitle">Служба поддержки</span></div>
+                        <div class="col-12"><a href="tel:+375173801322" class="supportPhones">+375 17 380-13-22</a></div>
+                        <div class="col-12"><a href="tel:+375293392222" class="supportPhones">+375 29 339-22-22</a></div>
+                        <div class="col-12"><a href="mailto:info@abiatec.com" class="supportMail">info@abiatec.com</a></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 offset-lg-1 text-center">
+                    <div class="row no-gutters">
+                        <div class="col-12 socialTitle">
+                            <span>Мы в соцcетях</span>
+                        </div>
+                        <div class="col-12 socialIcons">
+                            <div class="row no-gutters text-center justify-content-center">
+                                <div class="col-3 col-md-6 text-center" ><a class="socialLink icon-twitter" href="#"></a></div>
+                                <div class="col-3 col-md-6 text-center"><a class="socialLink icon-facebook" href="#"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/script.js"></script>
 </body>
