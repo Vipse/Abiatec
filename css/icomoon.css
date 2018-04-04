@@ -66,3 +66,39 @@
 .icon-support:before {
   content: "\e90d";
 }
+.icon-next:before {
+  content: "\e919";
+}
+.icon-search:before {
+  content: "\e917";
+}
+.icon-geo:before {
+  content: "\e90e";
+}
+.icon-phone2:before {
+  content: "\e90f";
+}
+.icon-gplus:before {
+  content: "\e910";
+}
+.icon-odnoklassniki:before {
+  content: "\e911";
+}
+.icon-VK:before {
+  content: "\e912";
+}
+.icon-diamond:before {
+  content: "\e913";
+}
+.icon-alarmClock:before {
+  content: "\e914";
+}
+.icon-openBook:before {
+  content: "\e915";
+}
+.icon-target:before {
+  content: "\e916";
+}
+.icon-handshake:before {
+  content: "\e918";
+}
